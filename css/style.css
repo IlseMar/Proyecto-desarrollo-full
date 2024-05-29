@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Luxurious+Roman&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*fuentes
+font-family: "Gideon Roman", serif;
+font-family: "Luxurious Roman", serif;
+*/
+
+/* INDEX*/
+
+/*header*/
+header h1 {
+    /*propiedades de texto*/
+    font-family: "Gideon Roman", serif;
+    color: rgb(0, 0, 0);
+    /*propiedades para fuentes*/
+    font-size: 45px;
+    font-weight: 100;
+    letter-spacing: 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    height: 170px;
+    width: 100%;
+    text-align: center;
+    font-family: "Gideon Roman", serif;
+}
+
+nav ul {
+    list-style: none;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    font-family: "Gideon Roman", serif;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    letter-spacing: 4px;
+    display: flex;
+}
+
+
+/*main*/
+
+
+.banner {
+    height: 400px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    background-color: rgb(255, 255, 255);
+    /*background-image: url("../assets/img/banners/Banner-larga.png");
+    background-repeat: no-repeat;
+    background-size: 100% 80%;
+    background-position: center;*/
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+}
+
+.productos {
+    background-color: brown;
+    height: 429px;
+    display: flex;
+    flex-direction: column;
+}
+
+.productos div h2 {
+text-align: center;
+font-family: "Gideon Roman", serif;
+}
+
+.imagen-productos {
+display: flex;
+flex-direction: row;
+height: 100%;
+width: 100%;
+gap: 30px;
+
+}
+
+.ticktok {
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: row;
+}
+
+.compartenos {
+    background-color: yellow;
+}
+
+.boton button {
+    padding: 10px 10px 10px 40px;
+    font-size: 20px;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    background-color: #ecb129c4;
+}
+
+/*footer*/
+.footer {
+    background-color: #02556f;
+    display: flex;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+.logos img {
+    padding: 20px;
+}
