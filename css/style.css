@@ -11,14 +11,12 @@ font-family: "Gideon Roman", serif;
 font-family: "Luxurious Roman", serif;
 */
 
-/* INDEX*/
+/*---INDEX---*/
 
-/*header*/
+/*HEADER*/
 header h1 {
-    /*propiedades de texto*/
     font-family: "Gideon Roman", serif;
     color: rgb(0, 0, 0);
-    /*propiedades para fuentes*/
     font-size: 45px;
     font-weight: 100;
     letter-spacing: 10px;
@@ -40,6 +38,7 @@ nav ul {
     font-size: 20px;
     display: flex;
     justify-content: space-around;
+    width: 100%;
 }
 
 nav ul li a {
@@ -48,60 +47,199 @@ nav ul li a {
     color: rgb(0, 0, 0);
     letter-spacing: 4px;
     display: flex;
+    width: 100%;
 }
 
 
-/*main*/
+/*MAIN*/
 
+/*banner*/
+.carousel-inner {
+    height: 680px;
+    width: 100%;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 0;
+    padding-right: 0;
+}
 
-.banner {
-    height: 400px;
+.carousel-inner img {
+    height: 100%;
+    width: 100%;
+}
+
+/*.banner {
+    height: 200px;
     width: 100%;
     margin-top: 30px;
     margin-bottom: 40px;
     background-color: rgb(255, 255, 255);
-    /*background-image: url("../assets/img/banners/Banner-larga.png");
+    background-image: url("../assets/img/banners/Banner-larga.png");
     background-repeat: no-repeat;
     background-size: 100% 80%;
-    background-position: center;*/
+    background-position: center;
 }
-
 .banner img {
     width: 100%;
     height: 100%;
+}*/
+/*.productos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 500px;
+    gap: 10px;
+    grid-template-areas:
+    "retratos espejos fundas tarjeteros"
+}*/
+
+/*seccion productos*/
+.productos {
+    display: flex;
+    width: 100%;
+    height: 630px;
+    margin-bottom: 40px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.productos {
-    background-color: brown;
-    height: 429px;
+.titulo-productos h2 {
+    text-align: center;
+    font-family: "Gideon Roman", serif;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+.cajas-productos {
+    width: 100%;
+    height: 500px;
+    display: grid;
+    background-color: #9b141b;
+    gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /*150px 150px 150px 150px;
+    grid-template-rows: 300px;*/
+    grid-template-areas:
+        "retratos espejos fundas tarjeteros";
+    justify-content: center;
+    align-items: center;
+}
+
+
+.retratos img {
+    box-shadow: 16px -10px teal;
+    border-radius: 18% 5%;
+    width: 150px;
+    height: 200px;
+    grid-area: retratos;
+    justify-content: center;
+    align-items: center;
+    /*margin-left: 50px;
+    /*box-shadow: 10px 5px 5px black;*/
+}
+
+.espejos img {
+    width: 150px;
+    height: 200px;
+    grid-area: espejos;
+}
+
+.fundas img {
+    width: 150px;
+    height: 200px;
+    grid-area: fundas;
+}
+
+.tarjeteros img {
+    width: 150px;
+    height: 200px;
+    grid-area: tarjeteros;
+}
+
+.retratos h1 {
+    text-align: center;
+    font-family: "Gideon Roman", serif;
+    font-size: 20px;
+}
+
+.espejos h1 {
+    text-align: center;
+    font-family: "Gideon Roman", serif;
+    font-size: 20px;
+}
+
+.fundas h1 {
+    text-align: center;
+    font-family: "Gideon Roman", serif;
+    font-size: 20px;
+}
+
+.tarjeteros h1 {
+    text-align: center;
+    font-family: "Gideon Roman", serif;
+    font-size: 20px;
+}
+
+
+
+/*flexbox=
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    width: 200px;
+    
+
+.retratos {
     display: flex;
     flex-direction: column;
+    height: 100%;
+    width: 100%;
+    gap: 30px;
 }
 
-.productos div h2 {
-text-align: center;
-font-family: "Gideon Roman", serif;
+.espejos {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    gap: 30px;
 }
 
-.imagen-productos {
-display: flex;
-flex-direction: row;
-height: 100%;
-width: 100%;
-gap: 30px;
-
+.fundas {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    gap: 30px;
 }
 
+.tarjeteros {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    gap: 30px;
+}*/
+
+
+
+/*seccion tiktok*/
 .ticktok {
+    width: 100%;
     background-color: blueviolet;
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
 }
 
+
+/*seccion compartir*/
 .compartenos {
     background-color: yellow;
 }
 
+/*boton*/
 .boton button {
     padding: 10px 10px 10px 40px;
     font-size: 20px;
@@ -111,7 +249,7 @@ gap: 30px;
     background-color: #ecb129c4;
 }
 
-/*footer*/
+/*FOOTER*/
 .footer {
     background-color: #02556f;
     display: flex;
