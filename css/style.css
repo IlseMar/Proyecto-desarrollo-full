@@ -83,84 +83,118 @@ nav ul li a {
     width: 100%;
     height: 100%;
 }*/
-/*.productos {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 500px;
-    gap: 10px;
-    grid-template-areas:
-    "retratos espejos fundas tarjeteros"
-}*/
 
+/*-----------------------------------------------*/
 /*seccion productos*/
 .productos {
-    display: flex;
     width: 100%;
-    height: 630px;
-    margin-bottom: 40px;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
+    height: 650px;
+    display: grid;
+    background-color: #02556f;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 80%;
+    grid-template-areas:
+        "titulo-productos"
+        "cajas-productos"
 }
 
 .titulo-productos h2 {
     text-align: center;
     font-family: "Gideon Roman", serif;
-    margin-top: 30px;
-    margin-bottom: 20px;
     font-size: 50px;
 }
 
 .cajas-productos {
     width: 100%;
-    height: 500px;
+    height: 400px;
     display: grid;
     background-color: #9b141b;
-    gap: 50px;
+    gap: 30px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    /*150px 150px 150px 150px;
-    grid-template-rows: 300px;*/
+    grid-template-rows: 400px;
     grid-template-areas:
         "retratos espejos fundas tarjeteros";
-    justify-content: center;
-    align-items: center;
+    /*justify-content: space-around;
+    justify-items:;
+    align-items: center;*/
+    align-self: self-start;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
+.retratos {
+    display: grid;
+    background-color: aqua;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 20px;
+    object-fit: cover;
+}
 
-.retratos img {
-    box-shadow: 16px -10px teal;
+.img1 {
+    box-shadow: 16px -10px 50px rgba(236, 176, 41, 1);
     border-radius: 18% 5%;
-    width: 150px;
-    height: 200px;
-    grid-area: retratos;
-    justify-content: center;
-    align-items: center;
-    /*margin-left: 50px;
-    /*box-shadow: 10px 5px 5px black;*/
+    width: 100%;
+    height: 100%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    order: 1;
+    overflow: hidden;
 }
 
-.espejos img {
-    width: 150px;
-    height: 200px;
-    grid-area: espejos;
-}
-
-.fundas img {
-    width: 150px;
-    height: 200px;
-    grid-area: fundas;
-}
-
-.tarjeteros img {
-    width: 150px;
-    height: 200px;
-    grid-area: tarjeteros;
+.titulo1 {
+    grid-column: 1/2;
+    grid-row: 3/5;
+    order: 2;
+    background-color: rgba(220, 224, 228, 0.5);
+    overflow: hidden;
 }
 
 .retratos h1 {
     text-align: center;
     font-family: "Gideon Roman", serif;
     font-size: 20px;
+    overflow: hidden;
+}
+
+.espejos {
+    display: grid;
+    background-color: aqua;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 20px;
+    object-fit: cover;
+}
+
+.img2 {
+    box-shadow: 16px -10px 50px rgba(236, 176, 41, 1);
+    border-radius: 18% 5%;
+    width: 100%;
+    height: 100%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    order: 1;
+    overflow: hidden;
+}
+
+.titulo2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    order: 2;
+    grid-column: 1/2;
+    grid-row: 3/5;
+    order: 2;
+    background-color: rgba(220, 224, 228, 0.5);
+    overflow: hidden;
 }
 
 .espejos h1 {
@@ -169,10 +203,69 @@ nav ul li a {
     font-size: 20px;
 }
 
+.fundas {
+    display: grid;
+    background-color: aqua;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 20px;
+    object-fit: cover;
+}
+
+.img3 {
+    box-shadow: 16px -10px 50px rgba(236, 176, 41, 1);
+    border-radius: 18% 5%;
+    width: 100%;
+    height: 100%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    order: 1;
+}
+
+.titulo3 {
+    grid-column: 1/2;
+    grid-row: 3/5;
+    order: 2;
+    background-color: rgba(220, 224, 228, 0.5);
+    overflow: hidden;
+}
+
 .fundas h1 {
     text-align: center;
     font-family: "Gideon Roman", serif;
     font-size: 20px;
+}
+
+.tarjeteros {
+    display: grid;
+    background-color: aqua;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+}
+
+.img4 {
+    box-shadow: 16px -10px 50px rgba(236, 176, 41, 1);
+    border-radius: 18% 5%;
+    width: 100%;
+    height: 100%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    order: 1;
+}
+
+.titulo4 {
+    grid-column: 1/2;
+    grid-row: 3/5;
+    order: 2;
+    background-color: rgba(220, 224, 228, 0.5);
+    overflow: hidden;
 }
 
 .tarjeteros h1 {
@@ -182,65 +275,162 @@ nav ul li a {
 }
 
 
-
-/*flexbox=
-    display: flex;
-    flex-direction: row;
-    height: 200px;
-    width: 200px;
-    
-
-.retratos {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    gap: 30px;
-}
-
-.espejos {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    gap: 30px;
-}
-
-.fundas {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    gap: 30px;
-}
-
-.tarjeteros {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    gap: 30px;
-}*/
-
-
-
+/*-----------------------------------------------*/
 /*seccion tiktok*/
-.ticktok {
+.tiktok {
     width: 100%;
-    background-color: blueviolet;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    height: 780px;
+    display: grid;
+    background-color: #02556f;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 80%;
+    grid-template-areas:
+        "titulo-tiktok"
+        "caja-ticktok"
+}
+
+.titulo-tiktok h2 {
+    text-align: center;
+    font-family: "Gideon Roman", serif;
+    font-size: 50px;
+}
+
+.caja-tiktok {
+    width: 100%;
+    height: 600px;
+    display: grid;
+    background-color: #9b141b;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 540px;
+    grid-template-areas:
+        "tt1 tt2 tt3";
+    align-self: self-start;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    align-items: center;
+}
+
+.caja-tiktok article {
+    width: 100%;
+    height: 100%;
+}
+
+.tt1 .tiktok-embed {
+    display: grid;
+    background-color: aqua;
+    height: 580px;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    object-fit: cover;
+    align-self: flex-start;
+    margin: 0;
+    padding: 0;
+    border-radius: 10%
+}
+
+.tt2 .tiktok-embed {
+    display: grid;
+    background-color: aqua;
+    height: 580px;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 20px;
+    object-fit: cover;
+    align-self: flex-start;
+    margin: 0;
+    padding: 0;
+    border-radius: 10%
+}
+
+.tt3 .tiktok-embed {
+    display: grid;
+    background-color: aqua;
+    height: 580px;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 20px;
+    object-fit: cover;
+    align-self: flex-start;
+    margin: 0;
+    padding: 0;
+    border-radius: 10%
 }
 
 
+/*-----------------------------------------------*/
 /*seccion compartir*/
-.compartenos {
-    background-color: yellow;
+
+.caja-compartir {
+    width: 100%;
+    height: 600px;
+    display: grid;
+    background-image: url(../assets/img/banners/Banner.png);
+    background-size: cover;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    align-self: self-start;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-items: center;
 }
 
+.caja-compartir .fondo-blanco {
+    width: 100%;
+}
+
+.fondo-blanco {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(228, 174, 189, 0.9);
+    grid-column: 4/8;
+    grid-row: 3/7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.obj1 {
+    font-family: "Luxurious Roman", serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 25px;
+}
+
+.obj2 {
+    font-family: "Luxurious Roman", serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 25px;
+}
+
+.obj3 {
+    padding: 5px;
+    font-size: 20px;
+    background-color: #E98270;
+    display: flex;
+}
+
+.obj3 img {
+    width: 30px;
+    height: 30px;
+}
+
+.boton-ig {
+    font-family: "Gideon Roman", serif;
+    font-size: 20px;
+}
+
+/*-----------------------------------------------*/
 /*boton*/
-.boton button {
+.boton-contacto button {
     padding: 10px 10px 10px 40px;
     font-size: 20px;
     position: fixed;
@@ -249,6 +439,9 @@ nav ul li a {
     background-color: #ecb129c4;
 }
 
+
+
+/*-----------------------------------------------*/
 /*FOOTER*/
 .footer {
     background-color: #02556f;
