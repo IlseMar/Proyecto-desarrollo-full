@@ -117,9 +117,6 @@ nav ul li a {
     grid-template-rows: 400px;
     grid-template-areas:
         "retratos espejos fundas tarjeteros";
-    /*justify-content: space-around;
-    justify-items:;
-    align-items: center;*/
     align-self: self-start;
     padding-left: 30px;
     padding-right: 30px;
@@ -439,18 +436,410 @@ nav ul li a {
     background-color: #ecb129c4;
 }
 
-
-
 /*-----------------------------------------------*/
 /*FOOTER*/
 .footer {
     background-color: #02556f;
     display: flex;
-    height: 150px;
+    flex-direction: row;
+    height: 200px;
+    width: 100%;
     justify-content: center;
     align-items: center;
 }
-
 .logos img {
-    padding: 20px;
+    padding: 5px;
+}
+
+.logos a {
+    width: 50px;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+/*-----------------------------------------------*/
+/*-----------------------------------------------*/
+/*+++PÁGINA CHROMÁTICA+++*/
+
+.sobre-mi {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    /*background-color: #02556f;*/
+    margin-bottom: 50px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(11, 1fr);
+}
+
+.sobre-mi img {
+    width: 100%;
+}
+
+.sobre-mi .foto-sobre-mi {
+    grid-column: 1 / 2;
+    grid-row: 1 /7;
+    object-fit: cover;
+}
+
+.foto-sobre-mi {
+    display: flex;
+    margin: 80px;
+    margin-right: 40px;
+}
+
+.foto-sobre-mi img {
+    object-fit: cover;
+}
+
+.sobre-mi .sobre-mi-texto {
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    grid-column: 2 / 3;
+    grid-row: 1 / 6;
+}
+
+.sobre-mi-texto {
+    display: flex;
+    margin: 80px;
+    flex-direction: column;
+    margin-left: 40px;
+}
+
+.sobre-mi h2 {
+    font-family: "Luxurious Roman", serif;
+    font-size: 50px;
+}
+
+.sobre-mi p {
+    font-family: "Luxurious Roman", serif;
+    font-size: 20px;
+}
+
+.sobre-mi .chromatica-texto {
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    grid-column: 1 / 2;
+    grid-row: 6 / 11;
+}
+
+.chromatica-texto {
+    display: flex;
+    flex-direction: column;
+    margin: 80px;
+    margin-right: 40px;
+}
+
+.chromarica-texto h2 {
+    font-family: "Luxurious Roman", serif;
+    font-size: 50px;
+}
+
+.chromatica-texto p {
+    font-family: "Luxurious Roman", serif;
+    font-size: 20px;
+}
+
+.sobre-mi .foto-chromatica {
+    grid-column: 2 / 3;
+    grid-row: 5 / 11;
+}
+
+.foto-chromatica {
+    display: flex;
+    margin: 80px;
+    margin-left: 40px;
+}
+
+.foto-chromatica img {
+    object-fit: cover;
+}
+
+/*-----------------------------------------------*/
+/*-----------------------------------------------*/
+/*+++PÁGINA FUNDAS+++*/
+
+.caja-fundas {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(13, 120px);
+}
+
+.caja-fundas img {
+    width: 100%;
+}
+
+.caja-fundas .producto1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 5;
+}
+
+.producto1 {
+    display: flex;
+    margin: 30px 15px 15px 30px;
+}
+
+.producto1 img {
+    object-fit: cover;
+}
+
+.caja-fundas .producto2 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 6;
+}
+
+.producto2 {
+    display: flex;
+    margin: 15px 15px 15px 15px;
+}
+
+.producto2 img {
+    object-fit: cover;
+}
+
+.caja-fundas .producto3 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 5;
+}
+
+.producto3 {
+    display: flex;
+    margin: 30px 30px 15px 15px;
+}
+
+.producto3 img {
+    object-fit: cover;
+}
+
+.caja-fundas .producto4 {
+    grid-column: 1 / 2;
+    grid-row: 5 / 9;
+}
+
+.producto4 {
+    display: flex;
+    margin: 15px 15px 15px 30px;
+}
+
+.producto4 img {
+    object-fit: cover;
+}
+
+.caja-fundas .producto5 {
+    grid-column: 2 / 3;
+    grid-row: 6 / 10;
+}
+
+.producto5 {
+    display: flex;
+    margin: 15px 15px 15px 15px;
+}
+
+.producto5 img {
+    object-fit: cover;
+}
+
+.caja-fundas .producto6 {
+    grid-column: 3 / 4;
+    grid-row: 5 / 9;
+}
+
+.producto6 {
+    display: flex;
+    margin: 15px 30px 15px 15px;
+}
+
+.producto6 img {
+    object-fit: cover;
+}
+
+.caja-fundas .producto7 {
+    grid-column: 1 / 2;
+    grid-row: 9 / 13;
+}
+
+.producto7 {
+    display: flex;
+    margin: 15px 15px 15px 30px;
+}
+
+.producto7 img {
+    object-fit: cover;
+}
+
+.caja-fundas .producto8 {
+    grid-column: 2 / 3;
+    grid-row: 10 / 14;
+}
+
+.producto8 {
+    display: flex;
+    margin: 15px 15px 15px 15px;
+}
+
+.producto8 img {
+    object-fit: cover;
+}
+
+.caja-fundas .producto9 {
+    grid-column: 3 / 4;
+    grid-row: 9 / 13;
+}
+
+.producto9 {
+    display: flex;
+    margin: 15px 30px 15px 15px;
+}
+
+.producto9 img {
+    object-fit: cover;
+}
+
+/*-----------------------------------------------*/
+/*-----------------------------------------------*/
+/*+++PÁGINA ESPEJOS+++*/
+
+.caja-espejos {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    background-color: #02556f;
+    margin-bottom: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(13, 120px);
+}
+
+.caja-espejos img {
+    width: 100%;
+}
+
+.caja-espejos .producto1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 5;
+}
+
+.caja-espejos .producto2 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 6;
+}
+
+.caja-espejos .producto3 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 5;
+}
+
+.caja-espejos .producto4 {
+    grid-column: 1 / 2;
+    grid-row: 5 / 9;
+}
+
+.caja-espejos .producto5 {
+    grid-column: 2 / 3;
+    grid-row: 6 / 10;
+}
+
+.caja-espejos .producto6 {
+    grid-column: 3 / 4;
+    grid-row: 5 / 9;
+}
+
+.caja-espejos .producto7 {
+    grid-column: 1 / 2;
+    grid-row: 9 / 13;
+}
+
+.caja-espejos .producto8 {
+    grid-column: 2 / 3;
+    grid-row: 10 / 14;
+}
+
+
+/*-----------------------------------------------*/
+/*-----------------------------------------------*/
+/*+++PÁGINA CONTÁCTAME+++*/
+
+.caja-principal {
+    width: 100%;
+    height: 650px;
+    display: grid;
+    background-image: url(../assets/img/banners/banner-2.jpeg);
+    background-size: cover;
+    background-position: center;
+    grid-template-columns: 100%;
+    margin: 50px 0px 50px 0px;
+}
+
+.items {
+    background-color: rgba(130, 104, 25, 0.5);
+    display: grid;
+    width: 100%;
+    height: 650px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+.caja-contacto fieldset {
+    width: 100%;
+}
+
+.titulo {
+    width: 100%;
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+
+.correo {
+    width: 100%;
+    grid-column: 2/4;
+    grid-row: 2/4;
+}
+
+.caja-contacto {
+    grid-column: 2/4;
+    grid-row: 4/8;
+    width: 100%;
+}
+
+.boton-enviar {
+    grid-column: 3/4;
+    grid-row: 8/9;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.formulario input {
+    width: 100%;
+}
+
+.formulario textarea {
+    width: 100%;
+}
+
+.items h1 {
+    margin-top: 50px;
+    font-family: "Gideon Roman", serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+.items h2 {
+    font-family: "Gideon Roman", serif;
+    font-size: 20px;
+    text-align: center;
+    align-self: flex-start;
+    margin-top: 50px;
 }
