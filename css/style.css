@@ -124,7 +124,6 @@ nav ul li a {
 
 .retratos {
     display: grid;
-    background-color: aqua;
     height: 100%;
     width: 100%;
     grid-template-columns: 100%;
@@ -133,7 +132,6 @@ nav ul li a {
 }
 
 .img1 {
-    box-shadow: 16px -10px 50px rgba(236, 176, 41, 1);
     border-radius: 18% 5%;
     width: 100%;
     height: 100%;
@@ -171,7 +169,6 @@ nav ul li a {
 }
 
 .img2 {
-    box-shadow: 16px -10px 50px rgba(236, 176, 41, 1);
     border-radius: 18% 5%;
     width: 100%;
     height: 100%;
@@ -181,6 +178,7 @@ nav ul li a {
     grid-row-end: 5;
     order: 1;
     overflow: hidden;
+    object-fit: cover;
 }
 
 .titulo2 {
@@ -211,7 +209,6 @@ nav ul li a {
 }
 
 .img3 {
-    box-shadow: 16px -10px 50px rgba(236, 176, 41, 1);
     border-radius: 18% 5%;
     width: 100%;
     height: 100%;
@@ -220,6 +217,7 @@ nav ul li a {
     grid-row-start: 1;
     grid-row-end: 5;
     order: 1;
+    object-fit: cover;
 }
 
 .titulo3 {
@@ -246,7 +244,7 @@ nav ul li a {
 }
 
 .img4 {
-    box-shadow: 16px -10px 50px rgba(236, 176, 41, 1);
+
     border-radius: 18% 5%;
     width: 100%;
     height: 100%;
@@ -255,6 +253,7 @@ nav ul li a {
     grid-row-start: 1;
     grid-row-end: 5;
     order: 1;
+    object-fit: cover;
 }
 
 .titulo4 {
@@ -286,7 +285,7 @@ nav ul li a {
     grid-template-rows: 20% 80%;
     grid-template-areas:
         "titulo-tiktok"
-        "caja-ticktok"
+        "caja-ticktok";
 }
 
 .titulo-tiktok h2 {
@@ -322,13 +321,14 @@ nav ul li a {
     background-color: aqua;
     height: 580px;
     width: 100%;
-    grid-template-columns: 100%;
+    grid-template-columns: 320px;
     grid-template-rows: 100%;
     object-fit: cover;
     align-self: flex-start;
     margin: 0;
     padding: 0;
-    border-radius: 10%
+    border-radius: 10%;
+    justify-content: center;
 }
 
 .tt2 .tiktok-embed {
@@ -336,13 +336,14 @@ nav ul li a {
     background-color: aqua;
     height: 580px;
     width: 100%;
-    grid-template-columns: 100%;
-    grid-template-rows: 1fr 1fr 20px;
+    grid-template-columns: 320px;
+    grid-template-rows: 100%;
     object-fit: cover;
     align-self: flex-start;
     margin: 0;
     padding: 0;
-    border-radius: 10%
+    border-radius: 10%;
+    justify-content: center;
 }
 
 .tt3 .tiktok-embed {
@@ -350,13 +351,13 @@ nav ul li a {
     background-color: aqua;
     height: 580px;
     width: 100%;
-    grid-template-columns: 100%;
-    grid-template-rows: 1fr 1fr 20px;
+    grid-template-columns: 320px;
     object-fit: cover;
     align-self: flex-start;
     margin: 0;
     padding: 0;
-    border-radius: 10%
+    border-radius: 10%;
+    justify-content: center;
 }
 
 
@@ -399,6 +400,7 @@ nav ul li a {
     padding-left: 20px;
     padding-right: 20px;
     font-size: 25px;
+    text-align: center;
 }
 
 .obj2 {
@@ -447,6 +449,7 @@ nav ul li a {
     justify-content: center;
     align-items: center;
 }
+
 .logos img {
     padding: 5px;
 }
@@ -469,7 +472,7 @@ nav ul li a {
     /*background-color: #02556f;*/
     margin-bottom: 50px;
     grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(11, 1fr);
+    grid-template-rows: repeat(10, 1fr);
 }
 
 .sobre-mi img {
@@ -565,7 +568,7 @@ nav ul li a {
     display: grid;
     width: 100%;
     height: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(13, 120px);
 }
@@ -709,7 +712,7 @@ nav ul li a {
     width: 100%;
     height: 100%;
     background-color: #02556f;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(13, 120px);
 }
@@ -755,7 +758,7 @@ nav ul li a {
 
 .caja-espejos .producto8 {
     grid-column: 2 / 3;
-    grid-row: 10 / 14;
+    grid-row: 10 / 15;
 }
 
 
@@ -771,7 +774,7 @@ nav ul li a {
     background-size: cover;
     background-position: center;
     grid-template-columns: 100%;
-    margin: 50px 0px 50px 0px;
+    margin: 50px 0px 100px 0px;
 }
 
 .items {
@@ -842,4 +845,51 @@ nav ul li a {
     text-align: center;
     align-self: flex-start;
     margin-top: 50px;
+}
+
+@media (max-width: 1024px) {
+    .productos {
+        height: 550px;
+    }
+
+    .cajas-productos {
+        height: 350px;
+    }
+
+    .retratos {
+        height: 350px;
+    }
+
+    .espejos {
+        height: 350px;
+    }
+
+    .fundas {
+        height: 350px;
+    }
+
+    .tarjeteros {
+        height: 350px;
+    }
+
+    .tiktok {
+        height: 750px;
+    }
+    .caja-tiktok {
+        height: 500px;
+    }
+    .tt1 .tiktok-embed {
+        grid-template-columns: 320px;
+        height: 520px;
+    }
+
+    .tt2 .tiktok-embed {
+        grid-template-columns: 320px;
+        height: 520px;
+    }
+
+    .tt3 .tiktok-embed {
+        grid-template-columns: 320px;
+        height: 520px;
+    }
 }
