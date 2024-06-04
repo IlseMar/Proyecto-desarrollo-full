@@ -21,7 +21,8 @@ header h1 {
     font-weight: 100;
     letter-spacing: 10px;
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
+    justify-self: center;
 }
 
 header {
@@ -37,8 +38,9 @@ nav ul {
     list-style: none;
     font-size: 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
+    padding: 0px 30px 0px 30px;
 }
 
 nav ul li a {
@@ -48,6 +50,7 @@ nav ul li a {
     letter-spacing: 4px;
     display: flex;
     width: 100%;
+
 }
 
 
@@ -63,9 +66,19 @@ nav ul li a {
     padding-right: 0;
 }
 
+.carousel-item {
+    margin: 0;
+}
+
 .carousel-inner img {
     height: 100%;
     width: 100%;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    padding: 0;
 }
 
 /*.banner {
@@ -323,7 +336,6 @@ nav ul li a {
     width: 100%;
     grid-template-columns: 320px;
     grid-template-rows: 100%;
-    object-fit: cover;
     align-self: flex-start;
     margin: 0;
     padding: 0;
@@ -376,6 +388,7 @@ nav ul li a {
     margin-bottom: 50px;
     align-items: center;
     justify-items: center;
+
 }
 
 .caja-compartir .fondo-blanco {
@@ -711,7 +724,6 @@ nav ul li a {
     display: grid;
     width: 100%;
     height: 100%;
-    background-color: #02556f;
     margin-bottom: 100px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(13, 120px);
@@ -875,9 +887,11 @@ nav ul li a {
     .tiktok {
         height: 750px;
     }
+
     .caja-tiktok {
         height: 500px;
     }
+
     .tt1 .tiktok-embed {
         grid-template-columns: 320px;
         height: 520px;
@@ -891,5 +905,884 @@ nav ul li a {
     .tt3 .tiktok-embed {
         grid-template-columns: 320px;
         height: 520px;
+    }
+
+    .caja-compartir {
+        width: 100%;
+        background-size: auto;
+        background-repeat: no-repeat;
+    }
+
+    .fondo-blanco {
+        grid-column: 3/9;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /*+++INDEX+++*/
+    .elementos-nav a {
+        font-size: 15px;
+    }
+
+    .titulo-nav {
+        font-size: 40px;
+    }
+
+    .carousel-item img {
+        height: 500px;
+    }
+
+    .carousel-inner {
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    .carousel-inner {
+        width: 100%;
+        height: 550px;
+    }
+
+    .productos {
+        height: 430px;
+    }
+
+    .titulo-productos h2 {
+        font-size: 40px;
+    }
+
+    .cajas-productos {
+        height: 300px;
+        grid-template-rows: 300px;
+    }
+
+    .retratos {
+        grid-template-rows: 130px 130px;
+    }
+
+    .img1 {
+        grid-row: 1/3;
+    }
+
+    .titulo1 {
+        grid-row: 2/3;
+        align-content: flex-end;
+        background-color: rgba(220, 224, 228, 0);
+    }
+
+    .espejos {
+        grid-template-rows: 130px 130px;
+    }
+
+    .img2 {
+        grid-row: 1/3;
+    }
+
+    .titulo2 {
+        grid-row: 2/3;
+        align-content: flex-end;
+        background-color: rgba(220, 224, 228, 0);
+    }
+
+    .fundas {
+        grid-template-rows: 130px 130px;
+    }
+
+    .img3 {
+        grid-row: 1/3;
+    }
+
+    .titulo3 {
+        grid-row: 2/3;
+        align-content: flex-end;
+        background-color: rgba(220, 224, 228, 0);
+    }
+
+    .tarjeteros {
+        grid-template-rows: 130px 130px;
+    }
+
+    .img4 {
+        grid-row: 1/3;
+    }
+
+    .titulo4 {
+        grid-row: 2/3;
+        align-content: flex-end;
+        background-color: rgba(220, 224, 228, 0);
+    }
+
+    .titulo-tiktok h2 {
+        font-size: 40px;
+    }
+
+    .caja-compartir {
+        grid-template-rows: repeat(6, 1fr);
+        height: 450px;
+        background-size: contain;
+        margin: 0;
+    }
+
+    .fondo-blanco {
+        grid-row: 2/5;
+    }
+
+    /*+++CHROMATICA +++*/
+
+    .foto-sobre-mi {
+        display: flex;
+        margin: 60px;
+        margin-right: 30px;
+    }
+
+    .foto-sobre-mi img {
+        height: 500px;
+    }
+
+    .sobre-mi h2 {
+        font-size: 40px;
+    }
+
+    .sobre-mi p {
+        font-size: 15px;
+    }
+
+    .sobre-mi-texto {
+        margin: 60px;
+        margin-left: 30px;
+    }
+
+    .foto-chromatica {
+        margin: 60px;
+        margin-left: 30px;
+    }
+
+    .chromatica-texto {
+        margin: 60px;
+        margin-right: 30px;
+    }
+
+    /*+++FUNDAS+++*/
+    .caja-fundas {
+        height: 1200px;
+        grid-template-rows: repeat(8, 120px);
+    }
+
+    .caja-fundas .producto4 {
+        grid-column: 1 / 2;
+        grid-row: 4/7;
+    }
+
+    .caja-fundas .producto5 {
+        grid-column: 2 / 3;
+        grid-row: 5/8;
+    }
+
+    .caja-fundas .producto6 {
+        grid-column: 3/4;
+        grid-row: 4/7;
+    }
+
+    .caja-fundas .producto7 {
+        grid-column: 1 / 2;
+        grid-row: 7/10;
+    }
+
+    .caja-fundas .producto8 {
+        grid-column: 2/3;
+        grid-row: 8/11;
+    }
+
+    .caja-fundas .producto9 {
+        grid-column: 3/4;
+        grid-row: 7/10;
+    }
+
+    .producto1 img {
+        height: 350px;
+    }
+
+    .producto2 img {
+        height: 350px;
+        margin-top: -20px;
+    }
+
+    .producto3 img {
+        height: 350px;
+    }
+
+    .producto4 img {
+        height: 350px;
+        margin-top: 30px;
+    }
+
+    .producto5 img {
+        height: 350px;
+    }
+
+    .producto6 img {
+        height: 350px;
+        margin-top: 30px;
+    }
+
+    .producto7 img {
+        height: 350px;
+        margin-top: 45px;
+    }
+
+    .producto8 img {
+        height: 350px;
+        margin-top: 15px;
+    }
+
+    .producto9 img {
+        height: 350px;
+        margin-top: 45px;
+    }
+
+    /*+++ESPEJOS+++*/
+    .caja-espejos {
+        height: 1200px;
+        grid-template-rows: repeat(8, 120px);
+
+    }
+
+    .caja-espejos .producto4 {
+        grid-column: 1 / 2;
+        grid-row: 4/7;
+    }
+
+    .caja-espejos .producto5 {
+        grid-column: 2 / 3;
+        grid-row: 5/8;
+    }
+
+    .caja-espejos .producto6 {
+        grid-column: 3/4;
+        grid-row: 4/7;
+    }
+
+    .caja-espejos .producto7 {
+        grid-column: 1 / 2;
+        grid-row: 7/10;
+    }
+
+    .caja-espejos .producto8 {
+        grid-column: 2/3;
+        grid-row: 8/11;
+    }
+
+    .caja-espejos .producto9 {
+        grid-column: 3/4;
+        grid-row: 7/10;
+    }
+
+    /*+++CONTACTAME+++*/
+
+    .caja-principal {
+        height: 500px;
+        margin: 0;
+        margin-bottom: 80px;
+    }
+
+    .items {
+        height: 500px;
+    }
+
+    .items h1 {
+        margin-top: 30px;
+        font-family: "Gideon Roman", serif;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .items h2 {
+        font-family: "Gideon Roman", serif;
+        font-size: 18px;
+        text-align: center;
+        align-self: flex-start;
+        margin-top: 20px;
+    }
+
+    .formulario {
+        margin-top: -50px;
+    }
+}
+
+
+
+@media (max-width: 390px) {
+
+    /*+++INDEX+++*/
+    .elementos-nav a {
+        font-size: 9px;
+        letter-spacing: 2px;
+        font-weight: 500;
+    }
+
+    .elementos-nav ul {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .titulo-nav {
+        font-size: 20px;
+        padding: 20px 0px 10px 0px;
+        letter-spacing: 4px;
+        justify-content: space-between;
+    }
+
+    header {
+        height: 100px;
+    }
+
+    .carousel-item img {
+        height: 250px;
+    }
+
+    .carousel-inner {
+        width: 100%;
+        height: 300px;
+    }
+
+    .productos {
+        height: 200px;
+        margin-bottom: 50px;
+        align-self: center;
+        margin-bottom: 30px;
+    }
+
+    .titulo-productos h2 {
+        font-size: 20px;
+    }
+
+    .cajas-productos {
+        height: 120px;
+        grid-template-rows: 120px;
+        padding: 0px 10px;
+        gap: .625rem;
+    }
+
+    .retratos {
+        grid-template-rows: 60px 60px;
+    }
+
+    .img1 {
+        grid-row: 1/3;
+    }
+
+    .titulo1 {
+        grid-row: 1/3;
+        align-content: flex-end;
+    }
+
+    .retratos h1 {
+        font-size: 15px;
+    }
+
+    .espejos {
+        grid-template-rows: 60px 60px;
+    }
+
+    .img2 {
+        grid-row: 1/3;
+    }
+
+    .titulo2 {
+        grid-row: 1/3;
+        align-content: flex-end;
+    }
+
+    .espejos h1 {
+        font-size: 15px;
+    }
+
+    .fundas {
+        grid-template-rows: 60px 60px;
+    }
+
+    .img3 {
+        grid-row: 1/3;
+    }
+
+    .titulo3 {
+        grid-row: 1/3;
+        align-content: flex-end;
+    }
+
+    .fundas h1 {
+        font-size: 15px;
+    }
+
+    .tarjeteros {
+        grid-template-rows: 60px 60px;
+    }
+
+    .img4 {
+        grid-row: 1/3;
+    }
+
+    .titulo4 {
+        grid-row: 1/3;
+        align-content: flex-end;
+    }
+
+    .tarjeteros h1 {
+        font-size: 15px;
+    }
+
+    .tiktok {
+        height: 250px;
+        margin-bottom: 100px;
+    }
+
+    .caja-tiktok {
+        height: 250px;
+        grid-template-columns: 100px 100px 100px;
+    }
+
+    .titulo-tiktok h2 {
+        font-size: 20px;
+    }
+
+    .tiktok-embed {
+        width: 100px;
+    }
+
+    .tt1 .tiktok-embed {
+        height: 250px;
+        grid-template-columns: 100px;
+    }
+
+    .tt2 .tiktok-embed {
+        height: 250px;
+        grid-template-columns: 100px;
+    }
+
+    .tt3 .tiktok-embed {
+        height: 250px;
+        grid-template-columns: 100px;
+    }
+
+    .caja-compartir {
+        grid-template-rows: repeat(10, 1fr);
+        height: 250px;
+        background-size: cover;
+        margin-bottom: 30px;
+    }
+
+    .fondo-blanco {
+        grid-row: 4/8;
+        gap: 5px;
+    }
+
+    .obj1 {
+        padding-left: 2px;
+        padding-right: 2px;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .obj2 {
+        padding-left: 2px;
+        padding-right: 2px;
+        font-size: 13px;
+    }
+
+    .obj3 {
+        padding: 2px;
+        background-color: #E98270;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .obj3 img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .boton-ig {
+        font-family: "Gideon Roman", serif;
+        font-size: 10px;
+    }
+
+    .footer {
+        height: 80px;
+    }
+
+    .logos img {
+        padding: 5px;
+        width: 40px;
+    }
+
+    .logos {
+        justify-items: space-around;
+    }
+
+    .logos a {
+        width: 40px;
+        padding: 0;
+        margin: 0;
+    }
+
+    /*+++CHROMATICA+++*/
+
+    .sobre-mi {
+        grid-template-rows: repeat(8, 1fr);
+        margin-top: -30px;
+        height: 500px;
+    }
+
+    .sobre-mi .chromatica-texto {
+        grid-column: 1 / 2;
+        grid-row: 5 / 8;
+    }
+
+    .sobre-mi .foto-chromatica {
+        grid-column: 2 / 3;
+        grid-row: 5/8;
+    }
+
+    .foto-sobre-mi {
+        display: flex;
+        margin: 25px;
+        margin-right: 12.5px;
+    }
+
+    .foto-sobre-mi img {
+        height: 250px;
+    }
+
+    .sobre-mi h2 {
+        font-size: 20px;
+    }
+
+    .sobre-mi p {
+        font-size: 8px;
+    }
+
+    .sobre-mi-texto {
+        margin: 25px;
+        margin-left: 12.5px;
+        height: 220px;
+    }
+
+    .foto-chromatica {
+        margin: 25px;
+        margin-left: 12.5px;
+        height: 250px;
+    }
+
+    .chromatica-texto {
+        margin: 25px;
+        margin-top: 40px;
+        margin-right: 12.5px;
+    }
+
+    /*+++FUNDAS+++*/
+
+    .caja-fundas {
+        height: 600px;
+        grid-template-rows: repeat(5, 120px);
+        margin-bottom: 0;
+        margin-top: -30px;
+    }
+
+    .caja-fundas .producto4 {
+        grid-column: 1 / 2;
+        grid-row: 2/4;
+    }
+
+    .caja-fundas .producto5 {
+        grid-column: 2 / 3;
+        grid-row: 3/5;
+    }
+
+    .caja-fundas .producto6 {
+        grid-column: 3/4;
+        grid-row: 2/4;
+    }
+
+    .caja-fundas .producto7 {
+        grid-column: 1 / 2;
+        grid-row: 3/5;
+    }
+
+    .caja-fundas .producto8 {
+        grid-column: 2/3;
+        grid-row: 4/6;
+    }
+
+    .caja-fundas .producto9 {
+        grid-column: 3/4;
+        grid-row: 3/5;
+    }
+
+    .producto1 img {
+        height: 150px;
+    }
+
+    .producto2 img {
+        height: 150px;
+        margin-top: -45px;
+    }
+
+    .producto3 img {
+        height: 150px;
+    }
+
+    .producto4 img {
+        height: 150px;
+        margin-top: 60px;
+    }
+
+    .producto5 img {
+        height: 150px;
+    }
+
+    .producto6 img {
+        height: 150px;
+        margin-top: 60px;
+    }
+
+    .producto7 img {
+        height: 150px;
+        margin-top: 105px;
+    }
+
+    .producto8 img {
+        height: 150px;
+        margin-top: 45px;
+    }
+
+    .producto9 img {
+        height: 150px;
+        margin-top: 105px;
+    }
+
+    /*+++ESPEJOS+++*/
+
+    .caja-espejos {
+        height: 600px;
+        grid-template-rows: repeat(5, 120px);
+        margin-bottom: 0;
+        margin-top: -30px;
+    }
+
+    .caja-espejos .producto4 {
+        grid-column: 1 / 2;
+        grid-row: 2/4;
+    }
+
+    .caja-espejos .producto5 {
+        grid-column: 2 / 3;
+        grid-row: 3/5;
+    }
+
+    .caja-espejos .producto6 {
+        grid-column: 3/4;
+        grid-row: 2/4;
+    }
+
+    .caja-espejos .producto7 {
+        grid-column: 1 / 2;
+        grid-row: 3/5;
+    }
+
+    .caja-espejos .producto8 {
+        grid-column: 2/3;
+        grid-row: 4/6;
+    }
+
+        /*+++CONTACTAME+++*/
+
+        .caja-principal {
+            height: 250px;
+            margin: 0;
+            margin-bottom:60px;
+        }
+    
+        .items {
+            height: 250px;
+        }
+    
+        .items h1 {
+            margin-top: 15px;
+            font-family: "Gideon Roman", serif;
+            font-size: 25px;
+            text-align: center;
+        }
+    
+        .items h2 {
+            font-family: "Gideon Roman", serif;
+            font-size: 10px;
+            text-align: center;
+            align-self: flex-start;
+            margin-top: 0;
+        }
+    
+        .formulario {
+            margin-top: -50px;
+            height: 100px;
+        }
+}
+
+@media (max-width: 320px) {
+
+    /*+++INDEX+++*/
+    .elementos-nav ul {
+        justify-content: center;
+    }
+
+    .elementos-nav a {
+        font-size: 8px;
+        letter-spacing: 1px;
+        font-weight: 500;
+    }
+
+    /*+++CHROMATICA+++*/
+    .sobre-mi {
+        grid-template-rows: repeat(8, 1fr);
+        margin-top: -25px;
+        height: 500px;
+        margin-bottom: -35px;
+    }
+
+    .sobre-mi .chromatica-texto {
+        grid-column: 1 / 2;
+        grid-row: 4 / 8;
+    }
+
+    .sobre-mi .foto-chromatica {
+        grid-column: 2 / 3;
+        grid-row: 4/8;
+    }
+
+    .foto-sobre-mi {
+        display: flex;
+        margin: 15px;
+        margin-right: 12.5px;
+    }
+
+    .foto-sobre-mi img {
+        height: 200px;
+    }
+
+    .sobre-mi h2 {
+        font-size: 18px;
+    }
+
+    .sobre-mi p {
+        font-size: 6px;
+    }
+
+    .sobre-mi-texto {
+        margin: 15px;
+        margin-left: 12.5px;
+        height: 180px;
+    }
+
+    .foto-chromatica {
+        margin: 15px;
+        margin-left: 12.5px;
+        height: 200px;
+    }
+
+    .chromatica-texto {
+        margin: 15px;
+        margin-right: 12.5px;
+    }
+
+    /*+++FUNDAS+++*/
+    .producto1 img {
+        height: 150px;
+    }
+
+    .producto1 {
+        margin: 15px;
+        margin-right: 7.5px;
+    }
+
+    .producto2 {
+        margin: 15px;
+        margin-right: 7.5px;
+        margin-left: 7.5px;
+    }
+
+    .producto3 {
+        margin: 15px;
+        margin-left: 7.5px;
+    }
+
+    .producto4 {
+        margin: 15px;
+        margin-right: 7.5px;
+    }
+
+    .producto5 {
+        margin: 15px;
+        margin-right: 7.5px;
+        margin-left: 7.5px;
+    }
+
+    .producto6 {
+        margin: 15px;
+        margin-left: 7.5px;
+    }
+
+    .producto7 {
+        margin: 15px;
+        margin-right: 7.5px;
+    }
+
+    .producto8 {
+        margin: 15px;
+        margin-right: 7.5px;
+        margin-left: 7.5px;
+    }
+
+    .producto9 {
+        margin: 15px;
+        margin-left: 7.5px;
+    }
+
+    .producto2 img {
+        height: 150px;
+        margin-top: -60px;
+    }
+
+    .producto3 img {
+        height: 150px;
+    }
+
+    .producto4 img {
+        height: 150px;
+        margin-top: 45px;
+    }
+
+    .producto5 img {
+        height: 150px;
+        margin-top: -15px;
+    }
+
+    .producto6 img {
+        height: 150px;
+        margin-top: 45px;
+    }
+
+    .producto7 img {
+        height: 150px;
+        margin-top: 90px;
+    }
+
+    .producto8 img {
+        height: 150px;
+        margin-top: 30px;
+    }
+
+    .producto9 img {
+        height: 150px;
+        margin-top: 90px;
     }
 }
