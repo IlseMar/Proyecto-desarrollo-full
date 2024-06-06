@@ -18,12 +18,26 @@
             }
         }
     }
-    .carousel-inner {
-        width: 100%;
-        height: 300px;
-    }
-    .carousel-item img {
-        height: 250px;
+    .container-fluid {
+        height: 200px;
+        margin-bottom: 60px;
+        .carousel-banner{
+            height:200px;
+            margin-bottom: 60px;
+            .carousel-inner {
+                margin-bottom: 60px;
+                padding: 0;
+                width: 100%;
+                height: 200px;
+                .carousel-item {
+                    img {
+                        height: 200px;
+                        object-fit: cover;
+                        background-position: center center;
+                    }
+                }
+            }
+        }
     }
     .productos {
         height: 200px;
@@ -179,6 +193,22 @@
             img {
                 padding: 5px;
                 width: 40px;
+            }
+        }
+    }
+    .boton-contacto{
+        button{
+            padding: 7px 7px 7px 8px;
+            font-family: "Gideon Roman", serif;
+            border-radius: 10px;
+            font-size: 10px;
+            position: fixed;
+            right: 10px;
+            bottom: 15px;
+            background-color: #ecb129c4;
+            img{
+                width: 15px;
+                height: 15px;
             }
         }
     }
@@ -386,9 +416,33 @@
                 align-self: flex-start;
                 margin-top: 0;
             }
-            .formulario {
-                margin-top: -50px;
-                height: 100px;
+            .boton-enviar{
+                padding: 4.5px 8px;
+                border: 0;
+                border-radius: 100px;
+                margin-bottom: 20px;
+            }
+            .caja-contacto{
+                width: 100px;
+                .caja-formulario{
+                    width: 100px;
+                    .formulario {
+                        width: 100px;
+                        margin-top: -50px;
+                        height: 100px;
+                        input {
+                            width: 100px;
+                            height: 12px;
+                        }
+                        label {
+                            font-size: 10px;
+                        }
+                        textarea {
+                            width: 100px;
+                            height: 30px;
+                        }
+                    }
+                }
             }
         }
     }

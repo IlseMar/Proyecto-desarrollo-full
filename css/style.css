@@ -45,14 +45,15 @@ nav ul {
 .productos {
   width: 100%;
   height: 650px;
-  display: grid;
-  background-color: #02556f;
+  background-color: #9B141B;
   margin-bottom: 50px;
-  align-items: center;
-  justify-items: center;
+  display: grid;
+  gap: 0;
   grid-template-columns: 100%;
   grid-template-rows: 20% 80%;
-  grid-template-areas: "titulo-productos" "cajas-productos"; }
+  align-items: center;
+  justify-items: center;
+  grid-template-areas: "titulo-productos" "cajas-productos"; }
   .productos .titulo-productos h2 {
     text-align: center;
     font-family: "Gideon Roman", serif;
@@ -62,18 +63,19 @@ nav ul {
   width: 100%;
   height: 400px;
   display: grid;
-  background-color: #9b141b;
   gap: 30px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 400px;
+  align-items: none;
+  justify-items: none;
   grid-template-areas: "retratos espejos fundas tarjeteros";
   align-self: self-start;
   padding-left: 30px;
   padding-right: 30px; }
   .cajas-productos .retratos {
-    display: grid;
     height: 100%;
     width: 100%;
+    display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 1fr 1fr 20px;
     object-fit: cover; }
@@ -97,10 +99,11 @@ nav ul {
       grid-row-end: 5;
       order: 1;
       overflow: hidden; }
+    .cajas-productos .retratos .img1:hover {
+      transform: scale(1.1); }
 
 .espejos {
   display: grid;
-  background-color: aqua;
   height: 100%;
   width: 100%;
   grid-template-columns: 100%;
@@ -129,10 +132,11 @@ nav ul {
     order: 1;
     overflow: hidden;
     object-fit: cover; }
+  .espejos .img2:hover {
+    transform: scale(1.1); }
 
 .fundas {
   display: grid;
-  background-color: aqua;
   height: 100%;
   width: 100%;
   grid-template-columns: 100%;
@@ -157,14 +161,16 @@ nav ul {
     grid-row-end: 5;
     order: 1;
     object-fit: cover; }
+  .fundas .img3:hover {
+    transform: scale(1.1); }
 
 .tarjeteros {
   display: grid;
-  background-color: aqua;
   height: 100%;
   width: 100%;
   grid-template-columns: 100%;
-  grid-template-rows: 1fr 1fr; }
+  grid-template-rows: 1fr 1fr 20px;
+  object-fit: cover; }
   .tarjeteros .titulo4 {
     grid-column: 1/2;
     grid-row: 3/5;
@@ -184,20 +190,23 @@ nav ul {
     grid-row-end: 5;
     order: 1;
     object-fit: cover; }
+  .tarjeteros .img4:hover {
+    transform: scale(1.1); }
 
 /*-----------------------------------------------*/
 /*seccion tiktok*/
 .tiktok {
   width: 100%;
   height: 780px;
-  display: grid;
-  background-color: #02556f;
+  background-color: #33997B;
   margin-bottom: 50px;
-  align-items: center;
-  justify-items: center;
+  display: grid;
+  gap: 0;
   grid-template-columns: 100%;
   grid-template-rows: 20% 80%;
-  grid-template-areas: "titulo-tiktok" "caja-ticktok"; }
+  align-items: center;
+  justify-items: center;
+  grid-template-areas: "titulo-tiktok" "caja-ticktok"; }
   .tiktok .titulo-tiktok {
     text-align: center;
     font-family: "Gideon Roman", serif; }
@@ -207,24 +216,23 @@ nav ul {
     width: 100%;
     height: 600px;
     display: grid;
-    background-color: #9b141b;
     gap: 30px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 540px;
+    grid-template-rows: 240;
+    align-items: center;
+    justify-items: center;
     grid-template-areas: "tt1 tt2 tt3";
     align-self: self-start;
     justify-content: center;
     padding-left: 30px;
-    padding-right: 30px;
-    align-items: center; }
+    padding-right: 30px; }
     .tiktok .caja-tiktok .tt1 {
       width: 100%;
       height: 100%; }
       .tiktok .caja-tiktok .tt1 .tiktok-embed {
-        display: grid;
-        background-color: aqua;
         height: 580px;
         width: 100%;
+        display: grid;
         grid-template-columns: 320px;
         grid-template-rows: 100%;
         align-self: flex-start;
@@ -237,7 +245,6 @@ nav ul {
       height: 100%; }
       .tiktok .caja-tiktok .tt2 .tiktok-embed {
         display: grid;
-        background-color: aqua;
         height: 580px;
         width: 100%;
         grid-template-columns: 320px;
@@ -253,7 +260,6 @@ nav ul {
       height: 100%; }
       .tiktok .caja-tiktok .tt3 .tiktok-embed {
         display: grid;
-        background-color: aqua;
         height: 580px;
         width: 100%;
         grid-template-columns: 320px;
@@ -589,7 +595,25 @@ nav ul {
       width: 100%; }
     .caja-principal .items .boton-enviar {
       grid-column: 3/4;
-      grid-row: 8/9; }
+      grid-row: 8/9;
+      padding: 12.5px 30px;
+      border: 0;
+      border-radius: 100px;
+      background-color: #2ba8fb;
+      color: #ffffff;
+      font-weight: Bold;
+      transition: all 0.5s;
+      -webkit-transition: all 0.5s; }
+    .caja-principal .items .boton-enviar:hover {
+      background-color: #6fc5ff;
+      box-shadow: 0 0 20px #6fc5ff50;
+      transform: scale(1.1); }
+    .caja-principal .items .boton-enviar:active {
+      background-color: #3d94cf;
+      transition: all 0.25s;
+      -webkit-transition: all 0.25s;
+      box-shadow: none;
+      transform: scale(0.98); }
 
 .formulario {
   display: flex;
@@ -630,13 +654,14 @@ nav ul {
   padding-top: 50px;
   margin-bottom: 50px;
   margin-right: 0;
-  padding-right: 0; }
+  padding-right: 0;
+  background-position: bottom; }
   .carousel-inner .carousel-item {
-    margin: 0; }
+    margin: 0;
+    background-position: bottom; }
     .carousel-inner .carousel-item img {
       height: 100%;
       width: 100%;
-      margin-bottom: 0;
       padding: 0;
       object-fit: cover; }
 
@@ -680,13 +705,21 @@ nav ul {
     font-size: 40px; }
   .elementos-nav {
     font-size: 15px; }
-  .carousel-inner {
-    margin-bottom: 0;
-    padding: 0;
-    width: 100%;
-    height: 550px; }
-    .carousel-inner .carousel-item img {
-      height: 500px; }
+  .container-fluid {
+    height: 400px;
+    margin-bottom: 60px; }
+    .container-fluid .carousel-banner {
+      height: 400px;
+      margin-bottom: 60px; }
+      .container-fluid .carousel-banner .carousel-inner {
+        margin-bottom: 60px;
+        padding: 0;
+        width: 100%;
+        height: 400px; }
+        .container-fluid .carousel-banner .carousel-inner .carousel-item img {
+          height: 400px;
+          object-fit: cover;
+          background-position: center center; }
   .productos {
     height: 430px; }
     .productos .titulo-productos h2 {
@@ -866,6 +899,10 @@ nav ul {
         text-align: center;
         align-self: flex-start;
         margin-top: 20px; }
+      .caja-principal .items .boton-enviar {
+        padding: 8.5px 20px;
+        border: 0;
+        border-radius: 100px; }
   .formulario {
     margin-top: -50px; } }
 
@@ -884,11 +921,21 @@ nav ul {
     header .elementos-nav ul {
       justify-content: center;
       gap: 15px; }
-  .carousel-inner {
-    width: 100%;
-    height: 300px; }
-  .carousel-item img {
-    height: 250px; }
+  .container-fluid {
+    height: 200px;
+    margin-bottom: 60px; }
+    .container-fluid .carousel-banner {
+      height: 200px;
+      margin-bottom: 60px; }
+      .container-fluid .carousel-banner .carousel-inner {
+        margin-bottom: 60px;
+        padding: 0;
+        width: 100%;
+        height: 200px; }
+        .container-fluid .carousel-banner .carousel-inner .carousel-item img {
+          height: 200px;
+          object-fit: cover;
+          background-position: center center; }
   .productos {
     height: 200px;
     margin-top: 50px;
@@ -1003,6 +1050,18 @@ nav ul {
       .footer .logos img {
         padding: 5px;
         width: 40px; }
+  .boton-contacto button {
+    padding: 7px 7px 7px 8px;
+    font-family: "Gideon Roman", serif;
+    border-radius: 10px;
+    font-size: 10px;
+    position: fixed;
+    right: 10px;
+    bottom: 15px;
+    background-color: #ecb129c4; }
+    .boton-contacto button img {
+      width: 15px;
+      height: 15px; }
   .sobre-mi {
     grid-template-rows: repeat(8, 1fr);
     margin-top: -30px;
@@ -1150,9 +1209,27 @@ nav ul {
         text-align: center;
         align-self: flex-start;
         margin-top: 0; }
-      .caja-principal .items .formulario {
-        margin-top: -50px;
-        height: 100px; } }
+      .caja-principal .items .boton-enviar {
+        padding: 4.5px 8px;
+        border: 0;
+        border-radius: 100px;
+        margin-bottom: 20px; }
+      .caja-principal .items .caja-contacto {
+        width: 100px; }
+        .caja-principal .items .caja-contacto .caja-formulario {
+          width: 100px; }
+          .caja-principal .items .caja-contacto .caja-formulario .formulario {
+            width: 100px;
+            margin-top: -50px;
+            height: 100px; }
+            .caja-principal .items .caja-contacto .caja-formulario .formulario input {
+              width: 100px;
+              height: 12px; }
+            .caja-principal .items .caja-contacto .caja-formulario .formulario label {
+              font-size: 10px; }
+            .caja-principal .items .caja-contacto .caja-formulario .formulario textarea {
+              width: 100px;
+              height: 30px; } }
 
 @media (max-width: 320px) {
   header {
@@ -1256,7 +1333,7 @@ nav ul {
     margin: 0;
     margin-bottom: 30px; }
     .caja-principal .items {
-      height: 250px; }
+      height: 200px; }
       .caja-principal .items h1 {
         margin-top: 15px;
         font-family: "Gideon Roman", serif;
@@ -1268,12 +1345,26 @@ nav ul {
         text-align: center;
         align-self: flex-start;
         margin-top: 0; }
-      .caja-principal .items .formulario {
-        margin-top: -35px;
-        height: 100px;
+      .caja-principal .items .boton-enviar {
+        margin-top: 15px;
+        padding: 1px 8px;
         border: 0;
-        width: 100%; }
-        .caja-principal .items .formulario input {
-          width: 150px; }
-        .caja-principal .items .formulario textarea {
-          width: 150px; } }
+        border-radius: 100px;
+        margin-bottom: 5px;
+        font-size: 10px; }
+      .caja-principal .items .caja-contacto {
+        width: 100px; }
+        .caja-principal .items .caja-contacto .caja-formulario {
+          width: 100px; }
+          .caja-principal .items .caja-contacto .caja-formulario .formulario {
+            width: 100px;
+            margin-top: -15px;
+            height: 100px; }
+            .caja-principal .items .caja-contacto .caja-formulario .formulario input {
+              width: 100px;
+              height: 12px; }
+            .caja-principal .items .caja-contacto .caja-formulario .formulario label {
+              font-size: 10px; }
+            .caja-principal .items .caja-contacto .caja-formulario .formulario textarea {
+              width: 100px;
+              height: 30px; } }
