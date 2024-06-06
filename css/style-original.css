@@ -1,20 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Luxurious+Roman&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Luxurious+Roman&display=swap');
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
+}*/
 
-/*fuentes
-font-family: "Gideon Roman", serif;
-font-family: "Luxurious Roman", serif;
-*/
-
+/*-------------*/
 /*---INDEX---*/
+/*-------------*/
 
 /*HEADER*/
-header h1 {
+/*header h1 {
     font-family: "Gideon Roman", serif;
     color: rgb(0, 0, 0);
     font-size: 45px;
@@ -50,14 +47,13 @@ nav ul li a {
     letter-spacing: 4px;
     display: flex;
     width: 100%;
-
-}
+}*/
 
 
 /*MAIN*/
 
 /*banner*/
-.carousel-inner {
+/*.carousel-inner {
     height: 680px;
     width: 100%;
     padding-top: 50px;
@@ -75,30 +71,16 @@ nav ul li a {
     width: 100%;
     margin-bottom: 0;
     padding: 0;
-}
-
-.container-fluid {
-    padding: 0;
-}
-
-/*.banner {
-    height: 200px;
-    width: 100%;
-    margin-top: 30px;
-    margin-bottom: 40px;
-    background-color: rgb(255, 255, 255);
-    background-image: url("../assets/img/banners/Banner-larga.png");
-    background-repeat: no-repeat;
-    background-size: 100% 80%;
-    background-position: center;
-}
-.banner img {
-    width: 100%;
-    height: 100%;
 }*/
 
+/*.container-fluid {
+    padding: 0;
+}*/
+
+
+
 /*-----------------------------------------------*/
-/*seccion productos*/
+/*seccion productos
 .productos {
     width: 100%;
     height: 650px;
@@ -135,6 +117,7 @@ nav ul li a {
     padding-right: 30px;
 }
 
+
 .retratos {
     display: grid;
     height: 100%;
@@ -155,6 +138,10 @@ nav ul li a {
     order: 1;
     overflow: hidden;
 }
+
+aplicar
+.img1:hover{
+    transform: scale(1.4)
 
 .titulo1 {
     grid-column: 1/2;
@@ -180,8 +167,11 @@ nav ul li a {
     grid-template-rows: 1fr 1fr 20px;
     object-fit: cover;
 }
+.espejos .img2 {
+    overflow: hidden
+}*/
 
-.img2 {
+/*.img2 {
     border-radius: 18% 5%;
     width: 100%;
     height: 100%;
@@ -275,17 +265,17 @@ nav ul li a {
     order: 2;
     background-color: rgba(220, 224, 228, 0.5);
     overflow: hidden;
-}
+}*
 
 .tarjeteros h1 {
     text-align: center;
     font-family: "Gideon Roman", serif;
     font-size: 20px;
-}
+}/
 
 
 /*-----------------------------------------------*/
-/*seccion tiktok*/
+/*seccion tiktok
 .tiktok {
     width: 100%;
     height: 780px;
@@ -370,13 +360,13 @@ nav ul li a {
     padding: 0;
     border-radius: 10%;
     justify-content: center;
-}
+}*/
 
 
 /*-----------------------------------------------*/
 /*seccion compartir*/
 
-.caja-compartir {
+/*.caja-compartir {
     width: 100%;
     height: 600px;
     display: grid;
@@ -388,14 +378,14 @@ nav ul li a {
     margin-bottom: 50px;
     align-items: center;
     justify-items: center;
-
-}
+}*/
+/*position: relative*/
 
 .caja-compartir .fondo-blanco {
     width: 100%;
 }
 
-.fondo-blanco {
+/*.fondo-blanco {
     width: 100%;
     height: 100%;
     background-color: rgba(228, 174, 189, 0.9);
@@ -438,22 +428,22 @@ nav ul li a {
 .boton-ig {
     font-family: "Gideon Roman", serif;
     font-size: 20px;
-}
+}*/
 
 /*-----------------------------------------------*/
 /*boton*/
-.boton-contacto button {
+/*.boton-contacto button {
     padding: 10px 10px 10px 40px;
     font-size: 20px;
     position: fixed;
     right: 50px;
     bottom: 50px;
     background-color: #ecb129c4;
-}
+}*/
 
 /*-----------------------------------------------*/
 /*FOOTER*/
-.footer {
+/*.footer {
     background-color: #02556f;
     display: flex;
     flex-direction: row;
@@ -471,24 +461,23 @@ nav ul li a {
     width: 50px;
     padding: 10px;
     margin: 10px;
-}
+}*/
 
 
 /*-----------------------------------------------*/
 /*-----------------------------------------------*/
 /*+++PÁGINA CHROMÁTICA+++*/
 
-.sobre-mi {
+/*.sobre-mi {
     display: grid;
     width: 100%;
     height: 100%;
-    /*background-color: #02556f;*/
     margin-bottom: 50px;
     grid-template-columns: 50% 50%;
     grid-template-rows: repeat(10, 1fr);
-}
+}*/
 
-.sobre-mi img {
+/*.sobre-mi img {
     width: 100%;
 }
 
@@ -571,13 +560,13 @@ nav ul li a {
 
 .foto-chromatica img {
     object-fit: cover;
-}
+}*/
 
 /*-----------------------------------------------*/
 /*-----------------------------------------------*/
 /*+++PÁGINA FUNDAS+++*/
 
-.caja-fundas {
+/*.caja-fundas {
     display: grid;
     width: 100%;
     height: 100%;
@@ -714,13 +703,13 @@ nav ul li a {
 
 .producto9 img {
     object-fit: cover;
-}
+}*/
 
 /*-----------------------------------------------*/
 /*-----------------------------------------------*/
 /*+++PÁGINA ESPEJOS+++*/
 
-.caja-espejos {
+/*.caja-espejos {
     display: grid;
     width: 100%;
     height: 100%;
@@ -772,13 +761,13 @@ nav ul li a {
     grid-column: 2 / 3;
     grid-row: 10 / 15;
 }
-
+*/
 
 /*-----------------------------------------------*/
 /*-----------------------------------------------*/
 /*+++PÁGINA CONTÁCTAME+++*/
 
-.caja-principal {
+/*.caja-principal {
     width: 100%;
     height: 650px;
     display: grid;
@@ -857,9 +846,9 @@ nav ul li a {
     text-align: center;
     align-self: flex-start;
     margin-top: 50px;
-}
+}*/
 
-@media (max-width: 1024px) {
+/*@media (max-width: 1024px) {
     .productos {
         height: 550px;
     }
@@ -916,7 +905,7 @@ nav ul li a {
     .fondo-blanco {
         grid-column: 3/9;
     }
-}
+}*/
 
 @media (max-width: 768px) {
 
@@ -941,7 +930,7 @@ nav ul li a {
     .carousel-inner {
         width: 100%;
         height: 550px;
-    }
+    }*/
 
     .productos {
         height: 430px;

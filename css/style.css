@@ -1,4 +1,739 @@
+@charset "UTF-8";
+/*utilities*/
+/*base*/
+@import url("https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Luxurious+Roman&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box; }
+
+/*layout*/
+header {
+  background-color: white;
+  color: black;
+  height: 170px;
+  width: 100%;
+  text-align: center;
+  font-family: "Gideon Roman", serif; }
+  header h1 {
+    font-family: "Gideon Roman", serif;
+    color: black;
+    font-size: 45px;
+    font-weight: 100;
+    letter-spacing: 10px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    justify-self: center; }
+
+nav ul {
+  list-style: none;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0px 30px 0px 30px; }
+  nav ul li a {
+    font-family: "Gideon Roman", serif;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 4px;
+    display: flex;
+    width: 100%; }
+
+/*-----------------------------------------------*/
+/*seccion productos*/
+.productos {
+  width: 100%;
+  height: 650px;
+  display: grid;
+  background-color: #02556f;
+  margin-bottom: 50px;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 100%;
+  grid-template-rows: 20% 80%;
+  grid-template-areas: "titulo-productos" "cajas-productos"; }
+  .productos .titulo-productos h2 {
+    text-align: center;
+    font-family: "Gideon Roman", serif;
+    font-size: 50px; }
+
+.cajas-productos {
+  width: 100%;
+  height: 400px;
+  display: grid;
+  background-color: #9b141b;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 400px;
+  grid-template-areas: "retratos espejos fundas tarjeteros";
+  align-self: self-start;
+  padding-left: 30px;
+  padding-right: 30px; }
+  .cajas-productos .retratos {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 20px;
+    object-fit: cover; }
+    .cajas-productos .retratos .titulo1 {
+      grid-column: 1/2;
+      grid-row: 3/5;
+      order: 2;
+      background-color: rgba(220, 224, 228, 0.5);
+      overflow: hidden;
+      text-align: center;
+      font-family: "Gideon Roman", serif;
+      font-size: 20px;
+      overflow: hidden; }
+    .cajas-productos .retratos .img1 {
+      border-radius: 18% 5%;
+      width: 100%;
+      height: 100%;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 5;
+      order: 1;
+      overflow: hidden; }
+
+.espejos {
+  display: grid;
+  background-color: aqua;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 1fr 20px;
+  object-fit: cover; }
+  .espejos .titulo2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    order: 2;
+    grid-column: 1/2;
+    grid-row: 3/5;
+    order: 2;
+    background-color: rgba(220, 224, 228, 0.5);
+    overflow: hidden;
+    text-align: center;
+    font-family: "Gideon Roman", serif;
+    font-size: 20px; }
+  .espejos .img2 {
+    border-radius: 18% 5%;
+    width: 100%;
+    height: 100%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    order: 1;
+    overflow: hidden;
+    object-fit: cover; }
+
+.fundas {
+  display: grid;
+  background-color: aqua;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 1fr 20px;
+  object-fit: cover; }
+  .fundas .titulo3 {
+    grid-column: 1/2;
+    grid-row: 3/5;
+    order: 2;
+    background-color: rgba(220, 224, 228, 0.5);
+    overflow: hidden;
+    text-align: center;
+    font-family: "Gideon Roman", serif;
+    font-size: 20px; }
+  .fundas .img3 {
+    border-radius: 18% 5%;
+    width: 100%;
+    height: 100%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    order: 1;
+    object-fit: cover; }
+
+.tarjeteros {
+  display: grid;
+  background-color: aqua;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 1fr; }
+  .tarjeteros .titulo4 {
+    grid-column: 1/2;
+    grid-row: 3/5;
+    order: 2;
+    background-color: rgba(220, 224, 228, 0.5);
+    overflow: hidden;
+    text-align: center;
+    font-family: "Gideon Roman", serif;
+    font-size: 20px; }
+  .tarjeteros .img4 {
+    border-radius: 18% 5%;
+    width: 100%;
+    height: 100%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    order: 1;
+    object-fit: cover; }
+
+/*-----------------------------------------------*/
+/*seccion tiktok*/
+.tiktok {
+  width: 100%;
+  height: 780px;
+  display: grid;
+  background-color: #02556f;
+  margin-bottom: 50px;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 100%;
+  grid-template-rows: 20% 80%;
+  grid-template-areas: "titulo-tiktok" "caja-ticktok"; }
+  .tiktok .titulo-tiktok {
+    text-align: center;
+    font-family: "Gideon Roman", serif; }
+    .tiktok .titulo-tiktok .tiktok-titulo {
+      font-size: 50px; }
+  .tiktok .caja-tiktok {
+    width: 100%;
+    height: 600px;
+    display: grid;
+    background-color: #9b141b;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 540px;
+    grid-template-areas: "tt1 tt2 tt3";
+    align-self: self-start;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    align-items: center; }
+    .tiktok .caja-tiktok .tt1 {
+      width: 100%;
+      height: 100%; }
+      .tiktok .caja-tiktok .tt1 .tiktok-embed {
+        display: grid;
+        background-color: aqua;
+        height: 580px;
+        width: 100%;
+        grid-template-columns: 320px;
+        grid-template-rows: 100%;
+        align-self: flex-start;
+        margin: 0;
+        padding: 0;
+        border-radius: 10%;
+        justify-content: center; }
+    .tiktok .caja-tiktok .tt2 {
+      width: 100%;
+      height: 100%; }
+      .tiktok .caja-tiktok .tt2 .tiktok-embed {
+        display: grid;
+        background-color: aqua;
+        height: 580px;
+        width: 100%;
+        grid-template-columns: 320px;
+        grid-template-rows: 100%;
+        object-fit: cover;
+        align-self: flex-start;
+        margin: 0;
+        padding: 0;
+        border-radius: 10%;
+        justify-content: center; }
+    .tiktok .caja-tiktok .tt3 {
+      width: 100%;
+      height: 100%; }
+      .tiktok .caja-tiktok .tt3 .tiktok-embed {
+        display: grid;
+        background-color: aqua;
+        height: 580px;
+        width: 100%;
+        grid-template-columns: 320px;
+        grid-template-rows: 100%;
+        object-fit: cover;
+        align-self: flex-start;
+        margin: 0;
+        padding: 0;
+        border-radius: 10%;
+        justify-content: center; }
+
+/*-----------------------------------------------*/
+/*seccion compartir*/
+.caja-compartir {
+  width: 100%;
+  height: 600px;
+  display: grid;
+  background-image: url(../assets/img/banners/Banner.png);
+  background-size: cover;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  align-self: self-start;
+  margin-bottom: 50px;
+  align-items: center;
+  justify-items: center; }
+  .caja-compartir .fondo-blanco {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(228, 174, 189, 0.9);
+    grid-column: 4/8;
+    grid-row: 3/7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; }
+    .caja-compartir .fondo-blanco .obj1 {
+      font-family: "Luxurious Roman", serif;
+      padding-left: 20px;
+      padding-right: 20px;
+      font-size: 25px;
+      text-align: center; }
+    .caja-compartir .fondo-blanco .obj2 {
+      font-family: "Luxurious Roman", serif;
+      padding-left: 20px;
+      padding-right: 20px;
+      font-size: 25px; }
+    .caja-compartir .fondo-blanco .obj3 {
+      padding: 5px;
+      font-size: 20px;
+      background-color: #E98270;
+      display: flex;
+      border-radius: 20px; }
+      .caja-compartir .fondo-blanco .obj3 img {
+        width: 30px;
+        height: 30px; }
+      .caja-compartir .fondo-blanco .obj3 .boton-ig {
+        font-family: "Gideon Roman", serif;
+        font-size: 20px; }
+
+/*-----------------------------------------------*/
+/*boton*/
+.boton-contacto button {
+  padding: 10px 10px 10px 20px;
+  font-family: "Gideon Roman", serif;
+  border-radius: 10px;
+  font-size: 20px;
+  position: fixed;
+  right: 60px;
+  bottom: 50px;
+  background-color: #ecb129c4; }
+  .boton-contacto button img {
+    width: 30px;
+    height: 30px; }
+
+/*-----------------------------------------------*/
+/*-----------------------------------------------*/
+/*+++PÁGINA CHROMÁTICA+++*/
+.sobre-mi {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 50px;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(10, 1fr); }
+  .sobre-mi img {
+    width: 100%;
+    object-fit: cover; }
+  .sobre-mi .sobre-mi-texto {
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    grid-column: 2 / 3;
+    grid-row: 1 / 6;
+    display: flex;
+    margin: 80px;
+    flex-direction: column;
+    margin-left: 40px; }
+    .sobre-mi .sobre-mi-texto h2 {
+      font-family: "Luxurious Roman", serif;
+      font-size: 50px; }
+    .sobre-mi .sobre-mi-texto p {
+      font-family: "Luxurious Roman", serif;
+      font-size: 20px; }
+  .sobre-mi .foto-sobre-mi {
+    grid-column: 1 / 2;
+    grid-row: 1 /7;
+    display: flex;
+    margin: 80px;
+    margin-right: 40px;
+    object-fit: cover; }
+  .sobre-mi .chromatica-texto {
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    grid-column: 1 / 2;
+    grid-row: 6 / 11;
+    display: flex;
+    flex-direction: column;
+    margin: 80px;
+    margin-right: 40px; }
+    .sobre-mi .chromatica-texto h2 {
+      font-family: "Luxurious Roman", serif;
+      font-size: 50px; }
+    .sobre-mi .chromatica-texto p {
+      font-family: "Luxurious Roman", serif;
+      font-size: 20px; }
+  .sobre-mi .foto-chromatica {
+    grid-column: 2 / 3;
+    grid-row: 5 / 11;
+    display: flex;
+    margin: 80px;
+    margin-left: 40px;
+    margin-left: 40px; }
+
+/*-----------------------------------------------*/
+/*-----------------------------------------------*/
+/*+++PÁGINA FUNDAS+++*/
+.caja-fundas {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 100px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(13, 120px); }
+  .caja-fundas img {
+    width: 100%; }
+  .caja-fundas .producto1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 5;
+    display: flex;
+    margin: 30px 15px 15px 30px; }
+    .caja-fundas .producto1 img {
+      object-fit: cover; }
+  .caja-fundas .producto2 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 6;
+    display: flex;
+    margin: 15px 15px 15px 15px; }
+    .caja-fundas .producto2 img {
+      object-fit: cover; }
+  .caja-fundas .producto3 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 5;
+    display: flex;
+    margin: 30px 30px 15px 15px; }
+    .caja-fundas .producto3 img {
+      object-fit: cover; }
+  .caja-fundas .producto4 {
+    grid-column: 1 / 2;
+    grid-row: 5 / 9;
+    display: flex;
+    margin: 15px 15px 15px 30px; }
+    .caja-fundas .producto4 img {
+      object-fit: cover; }
+  .caja-fundas .producto5 {
+    grid-column: 2 / 3;
+    grid-row: 6 / 10;
+    display: flex;
+    margin: 15px 15px 15px 15px; }
+    .caja-fundas .producto5 img {
+      object-fit: cover; }
+  .caja-fundas .producto6 {
+    grid-column: 3 / 4;
+    grid-row: 5 / 9;
+    display: flex;
+    margin: 15px 30px 15px 15px; }
+    .caja-fundas .producto6 img {
+      object-fit: cover; }
+  .caja-fundas .producto7 {
+    grid-column: 1 / 2;
+    grid-row: 9 / 13;
+    display: flex;
+    margin: 15px 15px 15px 30px; }
+    .caja-fundas .producto7 img {
+      object-fit: cover; }
+  .caja-fundas .producto8 {
+    grid-column: 2 / 3;
+    grid-row: 10 / 14;
+    display: flex;
+    margin: 15px 15px 15px 15px; }
+    .caja-fundas .producto8 img {
+      object-fit: cover; }
+  .caja-fundas .producto9 {
+    grid-column: 3 / 4;
+    grid-row: 9 / 13;
+    display: flex;
+    margin: 15px 30px 15px 15px; }
+    .caja-fundas .producto9 img {
+      object-fit: cover; }
+
+/*-----------------------------------------------*/
+/*-----------------------------------------------*/
+/*+++PÁGINA ESPEJOS+++*/
+.caja-espejos {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 100px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(13, 120px); }
+  .caja-espejos img {
+    width: 100%; }
+  .caja-espejos .producto1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 5;
+    display: flex;
+    margin: 30px 15px 15px 30px; }
+    .caja-espejos .producto1 img {
+      object-fit: cover; }
+  .caja-espejos .producto2 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 6;
+    display: flex;
+    margin: 15px 15px 15px 15px; }
+    .caja-espejos .producto2 img {
+      object-fit: cover; }
+  .caja-espejos .producto3 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 5;
+    display: flex;
+    margin: 30px 30px 15px 15px; }
+    .caja-espejos .producto3 img {
+      object-fit: cover; }
+  .caja-espejos .producto4 {
+    grid-column: 1 / 2;
+    grid-row: 5 / 9;
+    display: flex;
+    margin: 15px 15px 15px 30px; }
+    .caja-espejos .producto4 img {
+      object-fit: cover; }
+  .caja-espejos .producto5 {
+    grid-column: 2 / 3;
+    grid-row: 6 / 10;
+    display: flex;
+    margin: 15px 15px 15px 15px; }
+    .caja-espejos .producto5 img {
+      object-fit: cover; }
+  .caja-espejos .producto6 {
+    grid-column: 3 / 4;
+    grid-row: 5 / 9;
+    display: flex;
+    margin: 15px 30px 15px 15px; }
+    .caja-espejos .producto6 img {
+      object-fit: cover; }
+  .caja-espejos .producto7 {
+    grid-column: 1 / 2;
+    grid-row: 9 / 13;
+    display: flex;
+    margin: 15px 15px 15px 30px; }
+    .caja-espejos .producto7 img {
+      object-fit: cover; }
+  .caja-espejos .producto8 {
+    grid-column: 2 / 3;
+    grid-row: 10 / 14;
+    display: flex;
+    margin: 15px 15px 15px 15px; }
+    .caja-espejos .producto8 img {
+      object-fit: cover; }
+  .caja-espejos .producto9 {
+    grid-column: 3 / 4;
+    grid-row: 9 / 13;
+    display: flex;
+    margin: 15px 30px 15px 15px; }
+    .caja-espejos .producto9 img {
+      object-fit: cover; }
+
+/*-----------------------------------------------*/
+/*-----------------------------------------------*/
+/*+++PÁGINA CONTÁCTAME+++*/
+.caja-principal {
+  width: 100%;
+  height: 650px;
+  display: grid;
+  background-image: url(../assets/img/banners/banner-2.jpeg);
+  background-size: cover;
+  background-position: center;
+  grid-template-columns: 100%;
+  margin: 50px 0px 100px 0px; }
+  .caja-principal .items {
+    background-color: rgba(130, 104, 25, 0.5);
+    display: grid;
+    width: 100%;
+    height: 650px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    align-items: center;
+    justify-items: center; }
+    .caja-principal .items h1 {
+      margin-top: 50px;
+      font-family: "Gideon Roman", serif;
+      font-size: 50px;
+      text-align: center; }
+    .caja-principal .items h2 {
+      font-family: "Gideon Roman", serif;
+      font-size: 20px;
+      text-align: center;
+      align-self: flex-start;
+      margin-top: 50px; }
+    .caja-principal .items fieldset {
+      width: 100%; }
+    .caja-principal .items .titulo {
+      width: 100%;
+      grid-column: 2/4;
+      grid-row: 1/2; }
+    .caja-principal .items .correo {
+      width: 100%;
+      grid-column: 2/4;
+      grid-row: 2/4; }
+    .caja-principal .items .caja-contacto {
+      grid-column: 2/4;
+      grid-row: 4/8;
+      width: 100%; }
+    .caja-principal .items .boton-enviar {
+      grid-column: 3/4;
+      grid-row: 8/9; }
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+  border: 0; }
+  .formulario input {
+    width: 350px; }
+  .formulario textarea {
+    width: 350px; }
+
+.footer {
+  background-color: #02556f;
+  display: flex;
+  flex-direction: row;
+  height: 200px;
+  width: 100%;
+  justify-content: center;
+  align-items: center; }
+  .footer img {
+    padding: 5px; }
+  .footer a {
+    width: 50px;
+    padding: 10px;
+    margin: 10px; }
+
+/*components*/
+.container-fluid {
+  padding: 0;
+  object-fit: cover; }
+
+.carousel-inner {
+  height: 680px;
+  width: 100%;
+  padding-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 0;
+  padding-right: 0; }
+  .carousel-inner .carousel-item {
+    margin: 0; }
+    .carousel-inner .carousel-item img {
+      height: 100%;
+      width: 100%;
+      margin-bottom: 0;
+      padding: 0;
+      object-fit: cover; }
+
+/*mediaqueries*/
+@media (max-width: 1024px) {
+  .productos {
+    height: 550px; }
+    .productos .cajas-productos {
+      height: 350px; }
+      .productos .cajas-productos .retratos {
+        height: 350px; }
+    .productos .espejos {
+      height: 350px; }
+    .productos .fundas {
+      height: 350px; }
+    .productos .tarjeteros {
+      height: 350px; }
+  .tiktok {
+    height: 750px; }
+    .tiktok .caja-tiktok {
+      height: 500px; }
+      .tiktok .caja-tiktok .tt1 .tiktok-embed {
+        grid-template-columns: 320px;
+        height: 520px; }
+      .tiktok .caja-tiktok .tt2 .tiktok-embed {
+        grid-template-columns: 320px;
+        height: 520px; }
+      .tiktok .caja-tiktok .tt3 .tiktok-embed {
+        grid-template-columns: 320px;
+        height: 520px; }
+  .caja-compartir {
+    width: 100%;
+    background-size: auto;
+    background-repeat: no-repeat; }
+    .caja-compartir .fondo-blanco {
+      grid-column: 3/9; } }
+
+@media (max-width: 768px) {
+  .titulo-nav {
+    font-size: 40px; }
+    .titulo-nav .elementos-nav a {
+      font-size: 15px; }
+  .carousel-inner {
+    margin-bottom: 0;
+    padding: 0;
+    width: 100%;
+    height: 550px; }
+    .carousel-inner .carousel-item img {
+      height: 500px; }
+  .productos {
+    height: 430px; }
+    .productos .titulo-productos h2 {
+      font-size: 40px; }
+    .productos .cajas-productos {
+      height: 300px;
+      grid-template-rows: 300px; }
+      .productos .cajas-productos .retratos {
+        grid-template-rows: 130px 130px; }
+        .productos .cajas-productos .retratos .titulo1 {
+          grid-row: 2/3;
+          align-content: flex-end;
+          background-color: rgba(220, 224, 228, 0); }
+        .productos .cajas-productos .retratos .img1 {
+          grid-row: 1/3; }
+      .productos .cajas-productos .espejos {
+        grid-template-rows: 130px 130px; }
+        .productos .cajas-productos .espejos .titulo2 {
+          grid-row: 2/3;
+          align-content: flex-end;
+          background-color: rgba(220, 224, 228, 0); }
+        .productos .cajas-productos .espejos .img2 {
+          grid-row: 1/3; }
+      .productos .cajas-productos .fundas {
+        grid-template-rows: 130px 130px; }
+        .productos .cajas-productos .fundas .titulo3 {
+          grid-row: 2/3;
+          align-content: flex-end;
+          background-color: rgba(220, 224, 228, 0); }
+        .productos .cajas-productos .fundas .img3 {
+          grid-row: 1/3; }
+      .productos .cajas-productos .tarjeteros {
+        grid-template-rows: 130px 130px; }
+        .productos .cajas-productos .tarjeteros .titulo4 {
+          grid-row: 2/3;
+          align-content: flex-end;
+          background-color: rgba(220, 224, 228, 0); }
+        .productos .cajas-productos .tarjeteros .img4 {
+          grid-row: 1/3; }
+  .tiktok .titulo-tiktok {
+    text-align: center;
+    font-family: "Gideon Roman", serif; }
+    .tiktok .titulo-tiktok .tiktok-titulo {
+      font-size: 50px; }
+  .caja-compartir {
+    grid-template-rows: repeat(6, 1fr);
+    height: 450px;
+    background-size: contain;
+    margin: 0; }
+    .caja-compartir .fondo-blanco {
+      grid-row: 2/5; } }
